@@ -40,6 +40,10 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
 
         AudioListener.pause = false;
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
 
     void Pause()
