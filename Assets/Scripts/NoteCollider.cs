@@ -50,4 +50,13 @@ void Update()
         }
     }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            note1.SetActive(false);
+            canPickUpNote = false;
+        }
+    }
+
 }
