@@ -8,8 +8,24 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
+    public GameObject noteMenuUI;
+
+    public GameObject notecheckmark1;
 
     private AudioListener audioListener;
+
+    public GameObject collider1;
+    public GameObject collider2;
+    public GameObject collider3;
+    public GameObject collider4;
+    public GameObject collider5;
+
+    private bool notecollider1 = true;
+    private bool notecollider2 = true;
+    private bool notecollider3 = true;
+    private bool notecollider4 = true;
+    private bool notecollider5 = true;
+    
 
     void Start()
     {
@@ -31,6 +47,22 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            NoteMenu();        
+        }
+
+        if (!collider1.activeSelf)
+        {
+            notecollider1 = false;
+        }
+
+        if (notecollider1 == false)
+        {
+            notecheckmark1.SetActive(true);
+        }
+
     }
 
     public void Resume()
@@ -65,5 +97,12 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quitting game...");
         Application.Quit();
+    }
+
+    public void NoteMenu()
+    {
+        noteMenuUI.SetActive(!noteMenuUI.activeSelf);
+        GameIsPaused = noteMenuUI.activeSelf;
+        AudioListener.pause = false;
     }
 }

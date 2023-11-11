@@ -39,6 +39,7 @@ void Update()
                 endCollider.SetActive(true);
             }
         }
+
     }
 
     void OnTriggerEnter(Collider other)
