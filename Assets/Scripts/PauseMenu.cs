@@ -11,6 +11,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject noteMenuUI;
 
     public GameObject notecheckmark1;
+    public GameObject notecheckmark2;
+    public GameObject notecheckmark3;
+    public GameObject notecheckmark4;
+    public GameObject notecheckmark5;
 
     private AudioListener audioListener;
 
@@ -53,14 +57,56 @@ public class PauseMenu : MonoBehaviour
             NoteMenu();        
         }
 
+
+
         if (!collider1.activeSelf)
         {
             notecollider1 = false;
+
+            if (notecollider1 == false)
+            {
+                notecheckmark1.SetActive(true);
+            }
         }
 
-        if (notecollider1 == false)
+        if (!collider2.activeSelf)
         {
-            notecheckmark1.SetActive(true);
+            notecollider2 = false;
+
+            if (notecollider2 == false)
+            {
+                notecheckmark2.SetActive(true);
+            }
+        }
+
+        if (!collider3.activeSelf)
+        {
+            notecollider3 = false;
+
+            if (notecollider3 == false)
+            {
+                notecheckmark3.SetActive(true);
+            }
+        }
+
+        if (!collider4.activeSelf)
+        {
+            notecollider4 = false;
+
+            if (notecollider4 == false)
+            {
+                notecheckmark4.SetActive(true);
+            }
+        }
+
+        if (!collider5.activeSelf)
+        {
+            notecollider5 = false;
+
+            if (notecollider5 == false)
+            {
+                notecheckmark5.SetActive(true);
+            }
         }
 
     }

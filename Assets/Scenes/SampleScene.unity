@@ -3222,7 +3222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499299399}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11599472, y: -0.00000001709024, z: 0.00000000199585, w: 0.99324983}
+  m_LocalRotation: {x: 0.11599472, y: 0.00000001709023, z: -0.0000000019958488, w: 0.99324983}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11884,6 +11884,10 @@ MonoBehaviour:
   pauseMenuUI: {fileID: 624495675}
   noteMenuUI: {fileID: 322011321}
   notecheckmark1: {fileID: 623849168}
+  notecheckmark2: {fileID: 1329594701}
+  notecheckmark3: {fileID: 1352158835}
+  notecheckmark4: {fileID: 1301698603}
+  notecheckmark5: {fileID: 840635350}
   collider1: {fileID: 1327052620}
   collider2: {fileID: 84436916}
   collider3: {fileID: 184480586}
