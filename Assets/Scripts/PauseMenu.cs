@@ -29,6 +29,8 @@ public class PauseMenu : MonoBehaviour
     private bool notecollider3 = true;
     private bool notecollider4 = true;
     private bool notecollider5 = true;
+
+    public NoteCollider noteCollider;
     
 
     void Start()
@@ -137,6 +139,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("SampleScene");
+        noteCollider.ResetCounter();
     }
 
     public void QuitGame()

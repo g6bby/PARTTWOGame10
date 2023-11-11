@@ -60,4 +60,9 @@ void Update()
         }
     }
 
+    public void ResetCounter()
+    {
+        GameManager.triggeredNoteCount = 0;
+    }
+
 }
