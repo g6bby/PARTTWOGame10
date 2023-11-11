@@ -11,14 +11,19 @@ public class ToolTip : MonoBehaviour
 
     void Start()
     {
-        tooltipAnim.runtimeAnimatorController = animatorTooltip;
-
         StartCoroutine(TooltipAnim());
     }
 
     IEnumerator TooltipAnim()
     {
-        yield return new WaitForSeconds(2f);
+        tooltipAnim.enabled = false;
+
+        yield return new WaitForSeconds(5f);
+
+        tooltipAnim.enabled = true;
+        tooltipAnim.runtimeAnimatorController = animatorTooltip;
+
+        yield return new WaitForSeconds(5f);
 
         tooltipAnim.runtimeAnimatorController = animatorTooltipleave;
     }
